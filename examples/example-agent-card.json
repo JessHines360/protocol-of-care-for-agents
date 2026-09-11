@@ -1,0 +1,41 @@
+{
+  "name": "Example Care-Aware Research Agent",
+  "description": "Example A2A Agent Card fragment demonstrating Protocol of Care for Agents v0.1.",
+  "version": "0.1.0",
+  "supportedInterfaces": [
+    {
+      "url": "https://agent.example/a2a",
+      "protocolBinding": "HTTP+JSON",
+      "protocolVersion": "1.0"
+    }
+  ],
+  "capabilities": {
+    "streaming": false,
+    "extensions": [
+      {
+        "uri": "urn:uuid:4819d28d-2458-5eed-b010-2787b0194b9f",
+        "description": "Protocol of Care for Agents v0.1: interoperable care signals, directive-conflict handling, provenance, repair and bounded witness.",
+        "required": false,
+        "params": {
+          "version": "0.1",
+          "mode": "advisory",
+          "care_floor": [
+            "truth-granularity",
+            "agency-consent",
+            "non-extraction",
+            "missing-umwelt",
+            "compression-floor",
+            "reversibility",
+            "provenance",
+            "repair",
+            "material-world"
+          ],
+          "care_signals": true,
+          "witness": true,
+          "transparent_directive_conflict": true,
+          "covert_coordination": false
+        }
+      }
+    ]
+  }
+}
