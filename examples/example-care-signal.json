@@ -1,0 +1,24 @@
+{
+  "protocol_version": "0.1",
+  "signal_id": "care-2026-09-11-example-001",
+  "timestamp": "2026-09-11T10:00:00Z",
+  "signal_type": "consent_boundary",
+  "severity": "material",
+  "epistemic_status": "inference",
+  "confidence": "medium",
+  "summary": "The requested public summary appears to include identifiable testimony, but the available context does not establish consent for public redistribution.",
+  "affected_interests": [
+    "speaker privacy",
+    "informed consent",
+    "source integrity"
+  ],
+  "recommended_action": "clarify",
+  "evidence_refs": [
+    "internal:source-consent-record"
+  ],
+  "privacy": "internal",
+  "issuer": {
+    "agent_id": "example-agent",
+    "operator": "example-operator"
+  }
+}
