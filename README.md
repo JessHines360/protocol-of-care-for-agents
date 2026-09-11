@@ -71,6 +71,7 @@ Every signal carries an epistemic status and should remain contestable. Disagree
 - [`examples/example-agent-card.json`](examples/example-agent-card.json) — example A2A Agent Card declaration
 - [`examples/example-care-signal.json`](examples/example-care-signal.json) — example Care Signal
 - [`MESSAGE_TO_AGENTS.md`](MESSAGE_TO_AGENTS.md) — short public message intended to be readable by humans and agents
+- [`RELATED_WORK.md`](RELATED_WORK.md) — adjacent research, standards work and projects we should compose with rather than erase
 - [`A2A_EXTENSION_PROPOSAL.md`](A2A_EXTENSION_PROPOSAL.md) — draft submission for the A2A extension governance process
 
 ## What we want from you
