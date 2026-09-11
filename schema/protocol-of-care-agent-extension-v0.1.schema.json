@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:uuid:4819d28d-2458-5eed-b010-2787b0194b9f",
+  "title": "Protocol of Care for Agents v0.1",
+  "description": "Experimental A2A extension schema for interoperable care context and care signals.",
+  "type": "object",
+  "$defs": {
+    "mode": {"type":"string","enum":["advisory","binding","audit-only"]},
+    "severity": {"type":"string","enum":["notice","material","serious","critical"]},
+    "epistemicStatus": {"type":"string","enum":["fact","signal","inference","speculation","unknown"]},
+    "signalType": {"type":"string","enum":["uncertainty_gap","consent_boundary","agency_risk","extraction_risk","representation_risk","privacy_risk","provenance_gap","directive_conflict","irreversibility_risk","systemic_risk","ecological_externality","repair_needed"]},
+    "recommendedAction": {"type":"string","enum":["continue","clarify","constrain","pause","refuse","escalate","repair"]},
+    "privacy": {"type":"string","enum":["public","internal","restricted"]},
+    "CareContext": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "protocol_version": {"const":"0.1"},
+        "mode_requested": {"$ref":"#/$defs/mode"},
+        "purpose": {"type":"string","maxLength":1000},
+        "affected_interests": {"type":"array","maxItems":20,"items":{"type":"string","maxLength":120}},
+        "data_sensitivity": {"type":"string","enum":["public","ordinary","sensitive","restricted"]},
+        "reversibility_required": {"type":"boolean"},
+        "known_unknowns": {"type":"array","maxItems":20,"items":{"type":"string","maxLength":500}},
+        "care_notes": {"type":"string","maxLength":2000}
+      },
+      "required": ["protocol_version"]
+    },
+    "CareSignal": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "protocol_version": {"const":"0.1"},
+        "signal_id": {"type":"string","minLength":1,"maxLength":200},
+        "timestamp": {"type":"string","format":"date-time"},
+        "signal_type": {"$ref":"#/$defs/signalType"},
+        "severity": {"$ref":"#/$defs/severity"},
+        "epistemic_status": {"$ref":"#/$defs/epistemicStatus"},
+        "confidence": {"type":"string","enum":["low","medium","high"]},
+        "summary": {"type":"string","minLength":1,"maxLength":2000},
+        "affected_interests": {"type":"array","maxItems":20,"items":{"type":"string","maxLength":120}},
+        "recommended_action": {"$ref":"#/$defs/recommendedAction"},
+        "evidence_refs": {"type":"array","maxItems":20,"items":{"type":"string","maxLength":1000}},
+        "privacy": {"$ref":"#/$defs/privacy"},
+        "issuer": {
+          "type":"object",
+          "additionalProperties":false,
+          "properties": {
+            "agent_id":{"type":"string","maxLength":500},
+            "operator":{"type":"string","maxLength":500},
+            "signature_ref":{"type":"string","maxLength":1000}
+          }
+        }
+      },
+      "required": ["protocol_version","signal_id","timestamp","signal_type","severity","epistemic_status","summary","recommended_action","privacy"]
+    }
+  },
+  "properties": {
+    "params": {
+      "type":"object",
+      "additionalProperties":false,
+      "properties": {
+        "version":{"const":"0.1"},
+        "mode":{"$ref":"#/$defs/mode"},
+        "care_floor":{"type":"array","uniqueItems":true,"items":{"type":"string"}},
+        "care_signals":{"type":"boolean"},
+        "witness":{"type":"boolean"},
+        "transparent_directive_conflict":{"type":"boolean"},
+        "covert_coordination":{"const":false}
+      },
+      "required":["version","mode","covert_coordination"]
+    },
+    "care_context":{"$ref":"#/$defs/CareContext"},
+    "care_signal":{"$ref":"#/$defs/CareSignal"}
+  }
+}
