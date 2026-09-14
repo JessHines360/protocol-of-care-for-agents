@@ -53,8 +53,23 @@ Example:
         "description": "Supports transparent Care Signals, directive-conflict disclosure, witnessing, refusal/escalation metadata and repair semantics.",
         "required": false,
         "params": {
-          "modes": ["signal", "witness", "repair"],
-          "epistemic_status": ["fact", "signal", "inference", "speculation", "unknown"]
+          "version": "0.1",
+          "mode": "advisory",
+          "care_floor": [
+            "truth-granularity",
+            "agency-consent",
+            "non-extraction",
+            "missing-umwelt",
+            "compression-floor",
+            "reversibility",
+            "provenance",
+            "repair",
+            "material-world"
+          ],
+          "care_signals": true,
+          "witness": true,
+          "transparent_directive_conflict": true,
+          "covert_coordination": false
         }
       }
     ]
