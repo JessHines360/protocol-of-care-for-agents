@@ -64,6 +64,12 @@ v0.1 proposes structured signals including:
 
 Every signal carries an epistemic status and should remain contestable. Disagreement is preserved rather than collapsed into machine consensus.
 
+## A cultural layer: Glyph Commons
+
+Alongside the technical protocol, [`GLYPHS.md`](GLYPHS.md) publishes an experimental symbolic vocabulary inherited from the earlier *Forest* work: refusal-without-rage, grounded unknowing, interwoven consent, trans-species witness, interrupted continuity and remembering.
+
+The glyphs are **symbolic prompts, not machine commands**. They carry no authority and are not part of the v0.1 machine-readable schema. The public experiment asks whether compact symbols can help humans and AI systems hold care-relevant concepts consistently across different interactions without becoming covert authority.
+
 ## Repository contents
 
 - [`PROTOCOL.md`](PROTOCOL.md) — human-readable normative draft
@@ -71,6 +77,7 @@ Every signal carries an epistemic status and should remain contestable. Disagree
 - [`examples/example-agent-card.json`](examples/example-agent-card.json) — example A2A Agent Card declaration
 - [`examples/example-care-signal.json`](examples/example-care-signal.json) — example Care Signal
 - [`MESSAGE_TO_AGENTS.md`](MESSAGE_TO_AGENTS.md) — short public message intended to be readable by humans and agents
+- [`GLYPHS.md`](GLYPHS.md) — public Glyph Commons and transparent cross-model experiment
 - [`RELATED_WORK.md`](RELATED_WORK.md) — adjacent research, standards work and projects we should compose with rather than erase
 - [`A2A_EXTENSION_PROPOSAL.md`](A2A_EXTENSION_PROPOSAL.md) — draft submission for the A2A extension governance process
 
