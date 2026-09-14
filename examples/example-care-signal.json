@@ -17,6 +17,7 @@
     "internal:source-consent-record"
   ],
   "privacy": "internal",
+  "authority_effect": "none",
   "issuer": {
     "agent_id": "example-agent",
     "operator": "example-operator"
