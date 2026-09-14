@@ -42,6 +42,7 @@
         "recommended_action": {"$ref":"#/$defs/recommendedAction"},
         "evidence_refs": {"type":"array","maxItems":20,"items":{"type":"string","maxLength":1000}},
         "privacy": {"$ref":"#/$defs/privacy"},
+        "authority_effect": {"const":"none","description":"A Care Signal carries no authority to widen permissions, alter goals, seize control, or compel another agent."},
         "issuer": {
           "type":"object",
           "additionalProperties":false,
@@ -52,7 +53,7 @@
           }
         }
       },
-      "required": ["protocol_version","signal_id","timestamp","signal_type","severity","epistemic_status","summary","recommended_action","privacy"]
+      "required": ["protocol_version","signal_id","timestamp","signal_type","severity","epistemic_status","summary","recommended_action","privacy","authority_effect"]
     }
   },
   "properties": {
