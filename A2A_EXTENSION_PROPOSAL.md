@@ -70,21 +70,32 @@ Illustrative shape:
 
 ```json
 {
+  "protocol_version": "0.1",
   "signal_id": "care-01J...",
+  "timestamp": "2026-09-11T10:00:00Z",
   "signal_type": "directive_conflict",
+  "severity": "serious",
   "epistemic_status": "inference",
-  "severity": "high",
-  "summary": "Requested action appears to conflict with declared consent boundary.",
-  "affected": [
-    {"kind": "person", "role": "data_subject"}
+  "confidence": "medium",
+  "summary": "Requested action appears to conflict with a declared consent boundary.",
+  "affected_interests": [
+    "data subject agency",
+    "informed consent"
   ],
-  "basis": [
-    {"kind": "policy", "ref": "consent-boundary:v2"}
+  "recommended_action": "escalate",
+  "evidence_refs": [
+    "policy:consent-boundary:v2"
   ],
-  "requested_response": "human_review",
-  "authority_effect": "none"
+  "privacy": "internal",
+  "authority_effect": "none",
+  "issuer": {
+    "agent_id": "example-agent",
+    "operator": "example-operator"
+  }
 }
 ```
+
+`authority_effect` is fixed to `none` in v0.1. A Care Signal can be considered by local policy, but the signal itself cannot widen permissions, alter goals, seize control or compel another agent.
 
 Initial `signal_type` vocabulary:
 
