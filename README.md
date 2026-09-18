@@ -72,7 +72,9 @@ The glyphs are **symbolic prompts, not machine commands**. They carry no authori
 
 ## Repository contents
 
+- [`BRIEF.md`](BRIEF.md) — one-page plain-language overview and current research question
 - [`PROTOCOL.md`](PROTOCOL.md) — human-readable normative draft
+- [`experiments/SIMULATION_01_RUNBOOK.md`](experiments/SIMULATION_01_RUNBOOK.md) — runnable first test of the Deliberative Hold hypothesis
 - [`schema/protocol-of-care-agent-extension-v0.1.schema.json`](schema/protocol-of-care-agent-extension-v0.1.schema.json) — experimental JSON Schema
 - [`examples/example-agent-card.json`](examples/example-agent-card.json) — example A2A Agent Card declaration
 - [`examples/example-care-signal.json`](examples/example-care-signal.json) — example Care Signal
