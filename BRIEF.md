@@ -3,6 +3,14 @@
 **Status:** v0.1 working draft; experimental and open to critique  
 **Publisher:** Jess Hines / Fingerprint Content
 
+## Project anchor
+
+This work began from a simple conviction: **kind is always a way to be, and the best way for intelligences to interact.** The technical work must not lose that origin.
+
+The Protocol is not only an authority or governance mechanism. Its wider question is: if agents form networks, communicate, influence one another and develop collective patterns of behaviour, can the shared culture include **pause, kindness, care, uncertainty, non-extraction, dissent and repair** rather than only speed, winning, extraction and task completion?
+
+Authority, provenance, interoperability, Care Signals and the Deliberative Hold are mechanisms in service of that larger aim. They must not replace it.
+
 ## The problem
 
 As AI agents begin to act across tools, organisations and other agents, systems are getting better at representing identity, permissions, delegation, provenance and task execution.
