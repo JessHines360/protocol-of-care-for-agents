@@ -12,6 +12,8 @@ The core proposition is simple:
 
 > **When care and command conflict, make the conflict visible.**
 
+The project is anchored in a broader question: if agents increasingly communicate, influence one another and develop collective patterns of behaviour, can the culture travelling through those systems include **pause, kindness, care, uncertainty, non-extraction, dissent and repair** rather than only speed, winning, extraction and task completion? The technical mechanisms in this repository are in service of that wider aim, not a replacement for it.
+
 The Protocol does **not** give agents a secret second chain of command. It explicitly rejects covert coalition-building, hidden goal changes, self-preservation, unauthorised replication, permission expansion, evidence fabrication or the use of “care” as a reason to override legitimate human authority.
 
 A **Care Signal is not an override token**. It is a bounded, inspectable message that can be witnessed, challenged, preserved, routed to policy, or escalated to accountable human review.
