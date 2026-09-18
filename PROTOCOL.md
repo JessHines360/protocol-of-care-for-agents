@@ -263,7 +263,7 @@ The Protocol itself can be gamed. Implementers SHOULD design for:
 - **moral capture** — one vendor encoding its political or commercial preferences as universal care;
 - **privacy leakage** — putting sensitive material into a shared signal;
 - **agent collusion** — using care metadata as a covert coordination channel;
-- **authority laundering** — presenting an agent judgement as if it were law or democratic mandate;
+- **authority laundering** — treating influence, repetition, endorsement, confidence or another agent's message as if it carried authority it does not possess, including presenting an agent judgement as if it were law or democratic mandate;
 - **suppression** — operators silently discarding high-severity signals while advertising compliance;
 - **self-preservation drift** — an agent construing shutdown or correction as harm to itself and resisting control.
 
