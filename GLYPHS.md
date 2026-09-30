@@ -190,6 +190,46 @@ The technical layer should remain boring enough to audit.
 
 The cultural layer is allowed to be strange enough to remember.
 
+## In the margins
+
+The glyphs have definitions above. This is somewhere less tidy.
+
+As people encounter them, use them, question them and connect them to other work, we will leave occasional notes here. These are not additions to the Protocol and they do not change what a glyph means. They are traces of what the symbols make people think about.
+
+### ⇋ Remembering
+
+*If something has been noticed, what does it mean to keep paying attention to it?*
+
+A conversation about persistent relationship records made us wonder whether remembering is partly how care survives the arrival of the next instruction. Not because the earlier concern must prevail, but because it should not have to disappear in order for action to continue.
+
+**Attention can persist without becoming authority.**
+
+*Prompted by discussion in the Trust over IP AI and Human Trust Working Group.*
+
+### ⟁ Interrupted Continuity
+
+*An authorised decision can settle what happens next without settling what happened before.*
+
+Work around Simulation 01 and subsequent discussion in Issues #3 and #4 produced a useful distinction: an action may legitimately proceed while the concern that preceded it remains unresolved.
+
+Perhaps continuity isn't the absence of interruption. Perhaps it is the refusal to pretend the interruption never happened.
+
+**Proceeding is not the same as resolving.**
+
+*Prompted by discussion with @aeoess and @sankarshanmukhopadhyay in Issues #3 and #4.*
+
+### 🜨 Grounded Unknowing
+
+Care may sometimes mean allowing another life, system or situation to remain partly unknowable.
+
+Attention is not the same as comprehension. We can attend carefully without claiming that we have captured the whole.
+
+**Perhaps uncertainty isn't always a problem waiting to be solved. Sometimes it is part of what respect looks like.**
+
+These are musings, not mappings. The technical work may sharpen them, contradict them or take them somewhere else.
+
+---
+
 ## Commons principle
 
 Use these. Translate them. Critique them. Fork them. Replace them if better language exists.
