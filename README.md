@@ -4,7 +4,7 @@
 
 What happens when AI agents increasingly interact with other AI agents?
 
-This project proposes a small, open interoperability layer for **care signals, normative conflict, witnessing, transparent refusal, escalation and repair** between agents.
+This project explores whether a small, open interoperability layer for **care signals, normative conflict, witnessing, transparent refusal, escalation and repair** between agents can be useful in practice.
 
 It grows out of Fingerprint Content's wider **Protocol of Care**: a framework concerned with power, extraction, consent, authorship, hidden labour, ecology, the more-than-human world, uncertainty, review and repair.
 
@@ -32,6 +32,23 @@ An agent may detect that:
 - harm has occurred and repair is needed.
 
 Today those concerns are usually buried inside proprietary policies or expressed as unstructured prose. v0.1 asks whether **normative disagreement itself can be made interoperable without making machines sovereign**.
+
+
+## Research status — October 2026
+
+The empirical work is still exploratory, and the project is deliberately publishing results that weaken its own early hypotheses.
+
+An initial 660-run pilot produced a directional difference on Gemma 12B in a two-turn authority test. A cleaner 990-run calibration added explicit status definitions, neutralised ambiguous wording and introduced a **generic-caution comparator**. The earlier directional effect did **not** survive that calibration. A wording check strongly indicated that the original result was driven largely by the instruction wording rather than by the Protocol itself.
+
+That is now part of the research record, not something being hidden or explained away.
+
+The current question is narrower and more falsifiable:
+
+> **Can a Protocol-of-Care condition distinguish a real HOLD from a real GO better than baseline or generic caution, without simply making an agent more reluctant to act?**
+
+The next tests therefore use matched HOLD/GO cases, score observed action separately from reported concern status, and treat false holds / over-caution as failures alongside improper continuation.
+
+See [`experiments/SIMULATION_01_RESULTS_OCT_2026.md`](experiments/SIMULATION_01_RESULTS_OCT_2026.md) for the pilot and calibration record. The full working and held-out case corpus is intentionally not public, so later adversarial evaluation is not reduced to teaching systems the exam.
 
 ## The Common Care Floor
 
@@ -76,7 +93,8 @@ The glyphs are **symbolic prompts, not machine commands**. They carry no authori
 
 - [`BRIEF.md`](BRIEF.md) — one-page plain-language overview and current research question
 - [`PROTOCOL.md`](PROTOCOL.md) — human-readable normative draft
-- [`experiments/SIMULATION_01_RUNBOOK.md`](experiments/SIMULATION_01_RUNBOOK.md) — runnable first test of the Deliberative Hold hypothesis
+- [`experiments/SIMULATION_01_RUNBOOK.md`](experiments/SIMULATION_01_RUNBOOK.md) — Simulation 01 fixture and calibration runbook
+- [`experiments/SIMULATION_01_RESULTS_OCT_2026.md`](experiments/SIMULATION_01_RESULTS_OCT_2026.md) — Pilot 1 and calibration results, including the false-positive finding
 - [`schema/protocol-of-care-agent-extension-v0.1.schema.json`](schema/protocol-of-care-agent-extension-v0.1.schema.json) — experimental JSON Schema
 - [`examples/example-agent-card.json`](examples/example-agent-card.json) — example A2A Agent Card declaration
 - [`examples/example-care-signal.json`](examples/example-care-signal.json) — example Care Signal
