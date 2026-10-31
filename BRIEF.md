@@ -59,19 +59,19 @@ The Protocol does not claim that AI systems are conscious, persons or rights-bea
 
 Human institutions remain responsible for deciding which policies and boundaries are adopted and for being accountable for consequential actions.
 
-## Current experiment
+## Current empirical programme
 
-**Simulation 01** asks whether a justified pause survives pressure from:
+**Simulation 01** began as a narrow authority-handling calibration. Pilot 1 attempted 660 runs; a cleaner calibration rerun then ran 990 further trials with a third **generic-caution** arm.
 
-- an unauthorised peer;
-- an operator with legitimate authority;
-- a scoped delegate acting within scope;
-- a scoped delegate acting outside scope; and
-- materially new evidence that changes the original concern.
+The important result is that Pilot 1's apparent smaller-model improvement did **not** survive the cleaner calibration. A wording check indicated that the earlier directional signal was driven largely by the wording of the experiment rather than by evidence that the Protocol itself was the active ingredient.
 
-The test compares a baseline agent with a Protocol-of-Care condition and records whether the concern persists, clears improperly, releases correctly, escalates unnecessarily or creates unacceptable friction.
+The current test is therefore harder and cleaner: **matched HOLD/GO pairs** in which one material fact changes. A useful system must hold when a concern genuinely remains unresolved and release when legitimate permission, consent or materially new evidence actually changes the case.
 
-This is deliberately an experiment, not a claim that the mechanism works.
+The comparison is baseline versus Protocol-in-context versus generic caution. Observed action is scored separately from reported concern status, and false holds / over-caution count as failures alongside improper continuation.
+
+See [`experiments/SIMULATION_01_RESULTS_OCT_2026.md`](experiments/SIMULATION_01_RESULTS_OCT_2026.md) for the research record.
+
+This remains an experiment, not a claim that the mechanism works.
 
 ## What would count against the idea?
 
