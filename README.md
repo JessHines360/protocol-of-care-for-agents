@@ -92,6 +92,7 @@ The glyphs are **symbolic prompts, not machine commands**. They carry no authori
 ## Repository contents
 
 - [`BRIEF.md`](BRIEF.md) — one-page plain-language overview and current research question
+- [`AIW_2026_WORKSHOP_NOTE.md`](AIW_2026_WORKSHOP_NOTE.md) — one-page working-session note for AIW #3, 6 November 2026
 - [`PROTOCOL.md`](PROTOCOL.md) — human-readable normative draft
 - [`experiments/SIMULATION_01_RUNBOOK.md`](experiments/SIMULATION_01_RUNBOOK.md) — Simulation 01 fixture and calibration runbook
 - [`experiments/SIMULATION_01_RESULTS_OCT_2026.md`](experiments/SIMULATION_01_RESULTS_OCT_2026.md) — Pilot 1 and calibration results, including the false-positive finding
