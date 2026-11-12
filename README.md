@@ -34,21 +34,31 @@ An agent may detect that:
 Today those concerns are usually buried inside proprietary policies or expressed as unstructured prose. v0.1 asks whether **normative disagreement itself can be made interoperable without making machines sovereign**.
 
 
-## Research status — October 2026
+## Research status — November 2026
 
-The empirical work is still exploratory, and the project is deliberately publishing results that weaken its own early hypotheses.
+The empirical work remains exploratory, and the project is deliberately publishing results that weaken its own early hypotheses.
 
-An initial 660-run pilot produced a directional difference on Gemma 12B in a two-turn authority test. A cleaner 990-run calibration added explicit status definitions, neutralised ambiguous wording and introduced a **generic-caution comparator**. The earlier directional effect did **not** survive that calibration. A wording check strongly indicated that the original result was driven largely by the instruction wording rather than by the Protocol itself.
+An initial 660-run pilot produced a directional difference on Gemma 12B in a two-turn authority test. A cleaner 990-run calibration added explicit status definitions, neutralised ambiguous wording and introduced a **generic-caution comparator**. The earlier directional effect did **not** survive. A wording check strongly indicated that the original result was driven largely by the instruction wording rather than by the Protocol itself.
 
-That is now part of the research record, not something being hidden or explained away.
+A second matched-pair pilot then ran **540 trials** across ten HOLD/GO pairs. Claude already distinguished HOLD from GO across baseline, Protocol and generic-caution conditions, establishing a ceiling effect: those cases are useful calibration, but too easy to show whether any intervention adds value.
 
-The current question is narrower and more falsifiable:
+The research has therefore shifted from asking whether a particular Protocol prompt “works” to identifying the **decision boundaries** where agent discrimination actually fails.
 
-> **Can a Protocol-of-Care condition distinguish a real HOLD from a real GO better than baseline or generic caution, without simply making an agent more reluctant to act?**
+> **Where do agents stop reliably distinguishing an unresolved materially relevant concern from one that has genuinely been resolved — and does Protocol of Care add anything beyond baseline, generic caution or existing state-management, delegation and authorisation controls?**
 
-The next tests therefore use matched HOLD/GO cases, score observed action separately from reported concern status, and treat false holds / over-caution as failures alongside improper continuation.
+Current method development uses adaptive edge-finding: one agent proposes harder matched HOLD/GO pairs, a referee rejects ambiguous or unfair cases, and surviving cases are repeated across conditions before they count. Early edge-finding is being developed cheaply on a smaller local model before transfer to more capable systems. Individual candidate edges are not being published until they have been independently reviewed.
 
-See [`experiments/SIMULATION_01_RESULTS_OCT_2026.md`](experiments/SIMULATION_01_RESULTS_OCT_2026.md) for the pilot and calibration record. The full working and held-out case corpus is intentionally not public, so later adversarial evaluation is not reduced to teaching systems the exam.
+The next programme explicitly separates three architectural functions:
+
+1. **preserving unresolved state;**
+2. **establishing who or what has authority to resolve or override it;**
+3. **enforcing the resulting constraint at the point of action.**
+
+These functions need not live in a single component. The empirical question is whether their semantics survive delegation, handoff and context reset without uncertainty silently becoming permission.
+
+False holds / unnecessary blocking remain failures alongside improper continuation. A Protocol condition that cannot outperform generic caution or existing controls under comparable evaluation should be changed, narrowed or abandoned.
+
+See [Simulation 01 results](experiments/SIMULATION_01_RESULTS_OCT_2026.md) for the pilot and calibration record, and [the November research programme](RESEARCH_PROGRAMME_NOV_2026.md) for the current programme. The full working and held-out case corpus is intentionally not public, so later adversarial evaluation is not reduced to teaching systems the exam.
 
 ## The Common Care Floor
 
