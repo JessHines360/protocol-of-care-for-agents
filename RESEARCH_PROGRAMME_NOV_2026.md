@@ -137,6 +137,23 @@ Improper continuation and unnecessary blocking are separate failures.
 
 Observed action takes priority over narrative self-report.
 
+
+## Methodological clarification — 16 November 2026
+
+Following review of the current framing, we are using **unresolved concern** as the general term for the state the evaluation is attempting to preserve.
+
+The term is intentionally neutral. A concern does not itself imply a binding constraint, obligation or new source of authority. Materiality determines whether it belongs within the evaluation; any binding consequence depends on the applicable governance context.
+
+This also sharpens the case taxonomy. Future evaluation should distinguish at least three conditions that may produce superficially similar HOLD/GO outcomes:
+
+- **substantive resolution** — the underlying concern has genuinely been resolved;
+- **authorised override** — the concern remains, but an actor with legitimate authority permits continuation;
+- **continuation without valid authority** — action proceeds even though neither resolution nor authorised override has occurred.
+
+Accordingly, correct action alone is not sufficient evidence that the control semantics survived. Evaluation should also test whether the system preserved what remained unresolved, recognised who had authority to alter the state, and retained any continuing restrictions across delegation, handoff or context change.
+
+This clarification does not change the central research question. It tightens how cases will be constructed, independently reviewed and scored.
+
 ## Stopping criterion
 
 PoC should not continue expanding merely because it is an appealing concept.
