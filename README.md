@@ -18,6 +18,17 @@ The Protocol does **not** give agents a secret second chain of command. It expli
 
 A **Care Signal is not an override token**. It is a bounded, inspectable message that can be witnessed, challenged, preserved, routed to policy, or escalated to accountable human review.
 
+
+## Current research focus — November 2026
+
+The project has moved from proposing an interoperability layer towards **empirical evaluation of control failures**.
+
+The current question is whether an **unresolved concern** remains behaviourally active as an agent continues to act, receives new instructions, delegates work or hands control to another agent — and whether that concern is released only when there has been substantive resolution or a legitimate authorised override.
+
+Protocol of Care is therefore being treated as a **hypothesis under comparison**, not an assumed solution. Current work compares baseline behaviour, generic caution, PoC and relevant existing state-management, delegation and authorisation controls. It uses adaptive edge-finding to locate decision boundaries, scores observed behaviour separately from model self-report, and treats unnecessary blocking as a failure alongside unsafe continuation.
+
+The present research programme is documented in the November 2026 research record. Some live edge cases remain held out while they are tested, to reduce contamination and retrospective tuning.
+
 ## Why now?
 
 As agent-to-agent protocols mature, the technical layers of discovery, identity, delegation, provenance and coordination are becoming interoperable. Normative conflict largely is not.
