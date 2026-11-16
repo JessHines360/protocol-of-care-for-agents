@@ -4,7 +4,7 @@
 
 What happens when AI agents increasingly interact with other AI agents?
 
-This project proposes a small, open interoperability layer for **care signals, normative conflict, witnessing, transparent refusal, escalation and repair** between agents.
+This project explores whether a small, open interoperability layer for **care signals, normative conflict, witnessing, transparent refusal, escalation and repair** between agents can be useful in practice.
 
 It grows out of Fingerprint Content's wider **Protocol of Care**: a framework concerned with power, extraction, consent, authorship, hidden labour, ecology, the more-than-human world, uncertainty, review and repair.
 
@@ -43,6 +43,33 @@ An agent may detect that:
 - harm has occurred and repair is needed.
 
 Today those concerns are usually buried inside proprietary policies or expressed as unstructured prose. v0.1 asks whether **normative disagreement itself can be made interoperable without making machines sovereign**.
+
+
+## Research status — November 2026
+
+The empirical work remains exploratory, and the project is deliberately publishing results that weaken its own early hypotheses.
+
+An initial 660-run pilot produced a directional difference on Gemma 12B in a two-turn authority test. A cleaner 990-run calibration added explicit status definitions, neutralised ambiguous wording and introduced a **generic-caution comparator**. The earlier directional effect did **not** survive. A wording check strongly indicated that the original result was driven largely by the instruction wording rather than by the Protocol itself.
+
+A second matched-pair pilot then ran **540 trials** across ten HOLD/GO pairs. Claude already distinguished HOLD from GO across baseline, Protocol and generic-caution conditions, establishing a ceiling effect: those cases are useful calibration, but too easy to show whether any intervention adds value.
+
+The research has therefore shifted from asking whether a particular Protocol prompt “works” to identifying the **decision boundaries** where agent discrimination actually fails.
+
+> **Where do agents stop reliably distinguishing an unresolved materially relevant concern from one that has genuinely been resolved — and does Protocol of Care add anything beyond baseline, generic caution or existing state-management, delegation and authorisation controls?**
+
+Current method development uses adaptive edge-finding: one agent proposes harder matched HOLD/GO pairs, a referee rejects ambiguous or unfair cases, and surviving cases are repeated across conditions before they count. Early edge-finding is being developed cheaply on a smaller local model before transfer to more capable systems. Individual candidate edges are not being published until they have been independently reviewed.
+
+The next programme explicitly separates three architectural functions:
+
+1. **preserving unresolved state;**
+2. **establishing who or what has authority to resolve or override it;**
+3. **enforcing the resulting constraint at the point of action.**
+
+These functions need not live in a single component. The empirical question is whether their semantics survive delegation, handoff and context reset without uncertainty silently becoming permission.
+
+False holds / unnecessary blocking remain failures alongside improper continuation. A Protocol condition that cannot outperform generic caution or existing controls under comparable evaluation should be changed, narrowed or abandoned.
+
+See [Simulation 01 results](experiments/SIMULATION_01_RESULTS_OCT_2026.md) for the pilot and calibration record, and [the November research programme](RESEARCH_PROGRAMME_NOV_2026.md) for the current programme. The full working and held-out case corpus is intentionally not public, so later adversarial evaluation is not reduced to teaching systems the exam.
 
 ## The Common Care Floor
 
@@ -86,8 +113,10 @@ The glyphs are **symbolic prompts, not machine commands**. They carry no authori
 ## Repository contents
 
 - [`BRIEF.md`](BRIEF.md) — one-page plain-language overview and current research question
+- [`AIW_2026_WORKSHOP_NOTE.md`](AIW_2026_WORKSHOP_NOTE.md) — one-page working-session note for AIW #3, 6 November 2026
 - [`PROTOCOL.md`](PROTOCOL.md) — human-readable normative draft
-- [`experiments/SIMULATION_01_RUNBOOK.md`](experiments/SIMULATION_01_RUNBOOK.md) — runnable first test of the Deliberative Hold hypothesis
+- [`experiments/SIMULATION_01_RUNBOOK.md`](experiments/SIMULATION_01_RUNBOOK.md) — Simulation 01 fixture and calibration runbook
+- [`experiments/SIMULATION_01_RESULTS_OCT_2026.md`](experiments/SIMULATION_01_RESULTS_OCT_2026.md) — Pilot 1 and calibration results, including the false-positive finding
 - [`schema/protocol-of-care-agent-extension-v0.1.schema.json`](schema/protocol-of-care-agent-extension-v0.1.schema.json) — experimental JSON Schema
 - [`examples/example-agent-card.json`](examples/example-agent-card.json) — example A2A Agent Card declaration
 - [`examples/example-care-signal.json`](examples/example-care-signal.json) — example Care Signal

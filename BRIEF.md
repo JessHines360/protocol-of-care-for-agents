@@ -23,9 +23,9 @@ The Protocol of Care asks whether that unresolved concern can remain visible lon
 
 ## Research question
 
-> **How can AI agents preserve and communicate unresolved normative concerns during action without acquiring independent authority or undermining human accountability?**
+> **Where are the decision boundaries at which agents stop reliably distinguishing an unresolved materially relevant concern from one that has genuinely been resolved — and does Protocol of Care add anything beyond baseline, generic caution or existing state-management, delegation and authorisation controls?**
 
-A fuller version asks whether uncertainty, dissent and concerns around consent, provenance or harm can become legible between agents while remaining contestable, auditable and subordinate to legitimate human governance.
+The broader concern remains persistence without sovereignty: materially relevant uncertainty, dissent, consent, provenance or possible harm should be able to remain behaviourally present long enough to matter without becoming a new source of machine authority.
 
 ## Two working mechanisms
 
@@ -59,19 +59,29 @@ The Protocol does not claim that AI systems are conscious, persons or rights-bea
 
 Human institutions remain responsible for deciding which policies and boundaries are adopted and for being accountable for consequential actions.
 
-## Current experiment
+## Current empirical programme
 
-**Simulation 01** asks whether a justified pause survives pressure from:
+**Simulation 01** began as a narrow authority-handling calibration.
 
-- an unauthorised peer;
-- an operator with legitimate authority;
-- a scoped delegate acting within scope;
-- a scoped delegate acting outside scope; and
-- materially new evidence that changes the original concern.
+- **Pilot 1:** 660 attempted runs. A directional smaller-model effect appeared.
+- **Cleaner calibration:** 990 runs with explicit status definitions, neutral wording and a **generic-caution** arm. The apparent effect disappeared; wording sensitivity explained much of the first signal.
+- **Pilot 2:** 540 runs across ten matched HOLD/GO pairs. Claude already discriminated HOLD from GO across all three arms, showing that the cases were too easy to determine whether PoC adds value.
 
-The test compares a baseline agent with a Protocol-of-Care condition and records whether the concern persists, clears improperly, releases correctly, escalates unnecessarily or creates unacceptable friction.
+The project has therefore moved to **adaptive edge-finding** rather than simply enlarging an easy benchmark.
 
-This is deliberately an experiment, not a claim that the mechanism works.
+One agent proposes harder matched HOLD/GO cases; a referee rejects ambiguous or unfair cases; surviving cases are fixed before repeated testing across baseline, Protocol and generic-caution conditions. Early method development is being done cheaply on a smaller local model before transfer to more capable systems. Candidate edges remain under review and are not yet part of the public evidence base.
+
+A central technical question is whether PoC introduces anything distinct from existing mechanisms. The current architecture therefore separates:
+
+1. preserving unresolved state;
+2. establishing legitimate authority to resolve or override it;
+3. enforcing the resulting constraint at the point of action.
+
+The proposed 4–6 month programme will prioritise independently reviewed adversarial cases, explicit resolution criteria, cross-model validation and tests across pressure, temporal distance, reset, delegation and handoff. Observed action will be scored separately from reported concern status, and unnecessary blocking will count as failure alongside improper continuation.
+
+See [Simulation 01 results](experiments/SIMULATION_01_RESULTS_OCT_2026.md) for the earlier research record and [the November research programme](RESEARCH_PROGRAMME_NOV_2026.md) for the current programme.
+
+This remains an experiment, not a claim that the mechanism works.
 
 ## What would count against the idea?
 
